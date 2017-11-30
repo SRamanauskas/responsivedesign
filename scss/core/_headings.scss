@@ -1,0 +1,45 @@
+h1,
+.heading1 {
+    font-size: 15px;
+    color: $color-white-1;
+    font-weight: 100;
+}
+
+h2,
+.heading2 {
+    font-size: 16px;
+    color: $color-blue-1;
+    font-style: italic;
+    font-weight: 600;
+}
+
+h3,
+.heading3 {
+    font-size: 15px;
+    color: $color-black-1;
+    text-align: center;
+    font-weight: 600;
+}
+
+h4,
+.heading4 {
+    font-size: 14px;
+    color: $color-darkgray-1;
+    font-weight: 600;
+}
+
+h5,
+.heading5 {
+    font-size: 16px;
+    color: $color-black-1;
+}
+
+h6,
+.heading6 {
+    font-size: 13px;
+    color: $color-black-1;
+    
+    @media screen and (max-width: 560px) {
+        font-size: 15px;
+    }
+}

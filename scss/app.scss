@@ -1,0 +1,80 @@
+@import "core/variables";
+@import "core/headings";
+@import "core/svg-sprite";
+
+@import "global/buttons";
+@import "global/dropdowns";
+@import "global/icons";
+@import "global/search";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/shop-menu";
+@import "layout/hamburger-menu";
+
+body {
+    background-color: $color-white-1;
+    font-family: $font-family;
+    -ms-overflow-style: none;
+    overflow: auto;
+    margin: 0px;
+    
+    h1,
+    .header1 {
+        padding: 0;
+        margin: 0; 
+    }
+    
+    h2,
+    .header2 {
+        padding: 0;
+        margin: 0; 
+    }
+    h3,
+    .header3 {
+        padding: 0;
+        margin: 0; 
+    }
+    h4,
+    .header4 {
+        padding: 0;
+        margin: 0; 
+    }
+    h5,
+    .header5 {
+        padding: 0;
+        margin: 0; 
+    }
+    h6,
+    .header6 {
+        padding: 0;
+        margin: 0; 
+    }
+    
+    .noscript-message {
+        background-color: #fff1bb;
+        font-size: 16px;
+        padding: 3px;
+        text-align: center;
+        z-index: 99;
+    }
+    
+    a,
+    .link {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block; 
+}

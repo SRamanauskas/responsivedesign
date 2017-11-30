@@ -1,0 +1,299 @@
+.header {
+    &__shop-menu {
+        position: relative;
+        max-width: 1250px;
+        width: 100%;
+        font-size: 0px;
+        top: -30px;
+        text-align: center;
+        margin: auto;
+        padding: 0px 35px;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+        
+    &__departments {
+        width: 219px;
+        height: 576px;
+        box-sizing: border-box;
+        background-color: $color-blue-1;
+        border-radius: 3px;
+        border-top-right-radius: 0px;
+        padding-top: 21px;
+        text-align: left;
+        display: inline-block;
+        float: left;
+    }
+    
+    &__departments-dropdown {
+        width: 210px;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: $color-blue-1;
+        border-radius: 3px 0px 0px 3px;
+        padding-top: 21px;
+        text-align: left;
+        display: none;
+        float: left;
+    }
+    
+    &__departments-heading {
+        padding: 0px 0px 16px 15px;
+    }
+    
+    &__mark {
+        color: $color-yellow-1;
+        font-weight: 600;
+    }
+    
+    &__department-list {
+        padding-left: 0px;
+        padding-bottom: 9px;
+    }
+    
+    &__list-item {
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+        font-size: 12px;
+        color: $color-white-1;
+        padding-left: 15px;
+
+        &:last-child {
+           font-weight: 600;
+        }
+
+        &:hover {
+            background-color: $color-blue-3;
+            color: $color-yellow-1;
+        }
+    }
+    
+    &__menu-container {
+        $departments_width: 219px;
+        width: calc(100% - #{$departments_width});
+        display: inline-block;
+        background-color: $color-darkgray-1;
+        vertical-align: top;
+        height: 60px;
+        border-radius: 0px 3px 3px 0px;
+        text-align: left;
+    }
+   
+    &__brand-container {
+        width: 168px;
+        height: 100%;
+        display: inline-block;
+        background-color: $color-black-2;
+        vertical-align: top;
+        text-align: center;
+        line-height: 60px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    &__account-container {
+        display: none;
+        float: right;
+    }
+    
+    &__basket {
+        width: 147px;
+        border-radius: 0px 3px 3px 0px;
+        font-size: 14px;
+        color: $color-white-1;
+        font-weight: 600;
+        line-height: 60px;
+        vertical-align: middle;
+    }
+        
+    &__banner-container {
+        $departments_width: 219px;
+        width: calc(100% - #{$departments_width});
+        height: 517px;
+        float: right;
+        font-size: 0px;
+        padding: 15px 0px 0px 1.67%;
+        box-sizing: border-box;
+    }
+    
+    &__banner {
+        position: relative;
+    }
+    
+    &__banner-image {
+        width: 100%;
+        height: 408px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    &__banner-mobile {
+        display: none;
+    }
+    
+    &__shop-heading {
+        font-size: 19px;
+        color: $color-white-1;
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-50%);
+    }
+    
+    &__catalogue {
+        height: 78px;
+        width: 100%;
+        border: 1px solid $color-blue-3;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 78px;
+    }
+    
+    &__catalogue-heading {
+        display: inline-block;
+    }
+     
+    &__mobile-departments {
+        padding: 30px 0px 25px;
+        display: none;
+    }
+    
+    &__mobile-heading {
+        font-size: 15px;
+        font-weight: 600;
+        color: $color-darkgray-1;
+        margin: 0px;
+        padding-bottom: 11px;
+    }
+    
+    &__mobile-link {
+        font-size: 14px;
+        color: $color-blue-1;
+        margin: 0px;
+        padding: 7px 0px;
+        display: block;
+        
+        &:hover {
+            background-color: $color-lightgray-1;
+        }
+    }
+    
+    @media screen and (max-width: 1210px) {        
+        &__departments {
+            display: none;
+        }
+        
+        &__menu-container {
+            width: 100%;
+            max-width: 940px;
+            border-radius: 3px;
+        }
+        
+        &__departments-dropdown {
+            display: inline-block;
+        }
+        
+        &__banner-container {
+            float: none;
+            margin: auto;
+            max-width: 940px;
+            width: auto;
+            height: 100%;
+            padding-left: 0px;
+        }
+        
+        &__banner-image {
+            height: auto;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        &__menu-container {
+            max-width: 750px;
+            width: 100%;
+        }
+        
+        &__departments-dropdown {
+            display: none;
+        }
+            
+        &__brand-container {
+            display: none;
+        }
+                
+        &__account-container {
+            display: inline-block;
+        }
+    }
+    
+    @media screen and (max-width: 680px) {
+        &__menu-container {
+            border-radius: 0px;
+        }
+    }
+    
+    @media (min-width: 569px) and (max-width: 868px) {
+        &__shop-heading {
+            font-size: 15px;
+        }
+    }
+    
+    @media (min-width: 451px) and (max-width: 568px) {
+        &__shop-heading {
+            font-size: 11px;
+        }
+    }
+    
+    @media screen and (max-width: 540px) {
+        &__catalogue {
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        &__catalogue-heading {
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width: 465px) {
+        &__shop-menu {
+            top: 0px;
+        }
+        
+        &__catalogue {
+            display: none;
+        }
+    
+        &__menu-container {
+            height: 48px;
+        }
+        
+        &__basket {
+            width: 134px;
+            line-height: 45px;
+        }
+        
+        &__banner-image {
+            display: none;
+        }
+        
+        &__banner-mobile {
+            display: block;
+            width: 100%;
+            padding: 0px 15px;
+            box-sizing: border-box;
+        }
+        
+        &__shop-menu {
+            padding: 0px;
+        }
+         
+        &__mobile-departments {
+            display: block;
+        }
+    }
+}

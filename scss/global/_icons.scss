@@ -1,0 +1,133 @@
+.header {
+    &__phone {
+        @include svg-sprite(phone-gray);
+        vertical-align: middle;
+        margin-right: 5px;
+        margin-top: -2px;
+    }
+    
+    &__icon {
+        @include svg-sprite(arrow-down-gray);
+        margin-left: 10px;
+        position: relative;
+        top: 1px;
+    }
+    
+    &__brand-icon {
+        @include svg-sprite(arrow-down-white);
+        margin-left: 12px;
+        position: relative;
+        top: 1px;
+    } 
+    
+    &__question-icon {
+        @include svg-sprite(question-mark-white);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    } 
+    
+    &__profile-icon {
+        @include svg-sprite(user-white);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    } 
+    
+    &__basket-icon {
+        @include svg-sprite(shopping-cart-white);
+        margin-right: 11px;
+        position: relative;
+        top: 4px;
+    }  
+    
+    &__hamburger-open {
+        @include svg-sprite(mobile-menu-white);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        cursor: pointer;
+        
+        &.is-close {
+            @include svg-sprite(close-white);
+        }
+    }
+    
+    &__accordion-plus {
+        @include svg-sprite(plus-gray);
+        position: absolute;
+        top: 50%;
+        right: 55px;
+        transform: translateY(-50%);
+    }
+    
+    &__plus-blue {
+        @include svg-sprite(plus-blue);
+        margin-left: 9px;
+        position: relative;
+        top: 1px;
+    } 
+    
+    &__minus-blue {
+        @include svg-sprite(minus-blue);
+        margin-left: 9px;
+        position: relative;
+        top: 1px;
+    }
+    
+    .is-icon-minus {
+        @include svg-sprite(minus-gray);
+        position: absolute;
+        top: 50%;
+        right: 55px;
+        transform: translateY(-50%);
+    }
+}
+
+.menu-button {
+    &__user {
+        @include svg-sprite(user-gray); 
+    }
+    
+    &__cart {
+        @include svg-sprite(shopping-cart-gray);
+    }
+}   
+
+.search {
+    &__selector-icon {
+        @include svg-sprite(arrow-down-gray);
+        position: absolute;
+        right: 15px;
+        top: 17px;
+    }
+    
+    &__mobile-icon {
+        @include svg-sprite(search-white);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+.footer {
+    &__truck-icon {
+        @include svg-sprite(truck);
+    }
+    
+    &__headphones-icon {
+        @include svg-sprite(headphones);
+    }
+    
+    &__star-icon {
+        @include svg-sprite(star);
+    }
+    
+    &__card-icon {
+        @include svg-sprite(card);
+    }
+}
